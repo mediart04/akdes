@@ -22,6 +22,14 @@
 .offer{
 	background-color:;
 	color:white;
+	height: auto;
+
+}
+
+.omra{
+	background-color:red;
+	color:white;
+	height: auto;
 	padding:0px; 
 }
 .ui-content{
@@ -30,8 +38,24 @@
 	padding:0px; 
 }
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
-  background-color: #F9F3DE;
+	background-color: red;
+  background:url(../img/bg.png);
+  background-repeat:no-repeat;
   border-color: #bbb;
   color: #333;
   text-shadow: 0 1px 0 #f3f3f3;
+}
+.ui-listview .ui-li-has-thumb>img:first-child, .ui-listview .ui-li-has-thumb>.ui-btn>img:first-child, .ui-listview .ui-li-has-thumb .ui-li-thumb {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-height: 5em;
+  max-width: 6em;
+}
+.ui-content .ui-listview-inset, .ui-panel-inner>.ui-listview-inset {
+  margin: 0em 0;
+}
+
+.ui-collapsible-inset, .ui-collapsible-set {
+  margin: 0px 0;
 }
