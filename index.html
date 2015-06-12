@@ -1,205 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
 
-<!DOCTYPE html> 
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>Akdes-voyages</title>
- 
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+		<title>Mediart</title>
+		<meta name="description" content="">
+		<meta name="author" content="Mediart">
+		
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		
+		<link rel="stylesheet" href="css/jquery.mobile.css" />
+		
+		<link rel="stylesheet" href="css/style.css" />
 
-  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.mobile.js"></script>
+	</head>
 
-</head>
-<body >
-<div data-role="page" id="page1">
-  <div data-role="panel" id="mypanel">
+	<body>
+	<div  class="ff" data-role="page" id="a" >
+		<div data-role="panel" id="bars">
+			<h4>test</h4>
     <!-- panel content goes here -->
-    <p><img src="http://www.akdes-voyages.com/wp-content/uploads/2015/04/logo-akdes.png"></p>
-    <ul data-role="listview">
-      <li>Akdes</li>
-      <li>Contactez-nous</li>
-     </ul>
-  </div><!-- /panel -->
-  <div data-role="header"  data-theme="b">
-  <a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext">Delete</a>
-    <h1>AKDES</h1>
-  <a href="#info" data-transition="slide" class="ui-btn ui-shadow ui-corner-all ui-icon-info ui-btn-icon-notext">info</a>
+        </div><!-- /panel -->
+	<div data-role="header" data-position="fixed" class="bar-top">
+		<a href="#bars"  data-icon="bars" data-iconpos= notext >back</a>
+		<h1>Akdes</h1>
+		<a href="#" data-transition="flip"  data-icon="info" data-iconpos= notext data-theme="b">info</a>
+	</div><!-- /header -->
 
+	<div role="main" class="ui-content">
+	<a href="#B" data-transition="slide" data-role="button"  data-icon="arrow-r" data-iconpos="right" data-theme="a" >Reservation akdes</a>
+	<a href="#C"  data-transition="slide" data-role="button"  data-icon="arrow-r" data-iconpos="right" data-theme="e" >El hajj & Omra</a>
+
+	</div><!-- /content -->
+	<div data-role="footer" data-position="fixed">
+		<!-- <h4>Page Footer</h4> -->
+		
+	</div><!-- /footer -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="B">
+	<div data-role="header" data-position="fixed">
+		<a href="#a" data-transition="slide" data-icon="back" data-iconpos= notext>back</a>
+		<h1>Reservation</h1>
+	</div><!-- /header -->
+	<div role="content" class="ui-content">
+		<div data-role="main">
+			<ul data-role="listview"  >
+			  <li class="offert"  data-role="list-divider" data-theme="a">HAJJ 2015</li>
+			  <li>
+			    <a href="#Hajj 5 étoiles" data-transition="slide">
+			    <img src="http://www.akdes-voyages.com/wp-content/uploads/2015/05/akdas1-400x260.jpg">
+			    <h2>Hajj 5 étoiles</h2>
+			    <p>akdes testakdes testakdes testakdes testakdes test</p>
+			    <h2 class="ui-li-aside">2334€</h2>
+			    </a>
+			  </li>
+			  <li>
+			    <a href="#">
+			    <img src="http://www.akdes-voyages.com/wp-content/uploads/2015/05/akdas2-400x260.jpg">
+			    <h2>Hajj 15 jours</h2>
+			    <p>akdes testakdes testakdes testakdes testakdes test</p>
+			    <h2 class="ui-li-aside">2334€</h2>
+			    </a>
+			  </li>
+			  <li>
+			    <a href="#">
+			    <img src="http://www.akdes-voyages.com/wp-content/uploads/2015/05/akdas3-400x260.jpg">
+			    <h2>Hajj misfala</h2>
+			    <p>akdes testakdes testakdes testakdes testakdes test</p>
+			    <h2 class="ui-li-aside">2334€</h2>
+			    </a>
+			  </li>
+			  <li  class="offert" data-role="list-divider" data-theme="a">OMRA RAMADAN 2015</li>
+			  <li>
+			    <a href="#">
+			    <img src="http://www.akdes-voyages.com/wp-content/uploads/2014/12/Ramadan-2012-400x260.jpg">
+			    <h2>Akdes</h2>
+			    <p>akdes testakdes testakdes testakdes testakdes test</p>
+			    <h2 class="ui-li-aside">2334€</h2>
+			    </a>
+			  </li>
+			</ul>
+       </div >
+
+	</div>
+	<!-- /content -->
+	<div data-role="footer" data-position="fixed">
+		<!-- <h4>Page Footer</h4> -->
+	</div><!-- /footer -->
+    </div><!-- /page -->
+    <div data-role="page" id="Hajj 5 étoiles">
+	<div data-role="header" data-position="fixed">
+		<a href="#a" data-transition="slide" data-icon="back" data-iconpos= notext>back</a>
+		<h1>Hajj 5 étoiles</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<div id="slider" class="ui-grid-solo">
+			<img  src="http://www.akdes-voyages.com/wp-content/uploads/2014/12/madina-sharif-2-vacances-560x300.jpg">
+			    <h2 class="ui-li-aside">2334€</h2>
+     <div data-role="collapsible" data-inset="false">
+    <h4>Description</h4>
+    <p><p>Le Hajj 5 étoiles est conçu pour vous faire profiter au maximum. Une formule qui fait des heureux. Grace à cette offre Hajj, vous vivrez une expérience unique.</p></p>
+     </div>
+     <div data-role="collapsible" data-inset="false">
+    <h4>Détails</h4>
+    <p><p>Le Hajj 5 étoiles est conçu pour vous faire profiter au maximum. Une formule qui fait des heureux. Grace à cette offre Hajj, vous vivrez une expérience unique.</p></p>
+     </div>
+     <div data-role="collapsible" data-inset="false">
+    <h4>Infos Pratiques</h4>
+    <p><p>Le Hajj 5 étoiles est conçu pour vous faire profiter au maximum. Une formule qui fait des heureux. Grace à cette offre Hajj, vous vivrez une expérience unique.</p></p>
+     </div>
+     <div data-role="collapsible" data-inset="false">
+    <h4>Hôtels</h4>
+    <p><p>Le Hajj 5 étoiles est conçu pour vous faire profiter au maximum. Une formule qui fait des heureux. Grace à cette offre Hajj, vous vivrez une expérience unique.</p></p>
+     </div>
+			<a href="#Reservation"  data-transition="slide" data-role="button"  data-icon="arrow-r" data-iconpos="right" data-theme="e" >Reservation</a>
+
+		</div>
+	
+	</div><!-- /content -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="Reservation">
+  <div data-role="header">
+  	<a href="#B" data-transition="slide" data-icon="back" data-iconpos= notext>back</a>
+
+  <h1>Reservation</h1>
   </div>
-  <div data-role="main" class="ui-content">
-    <div class="offer">
-    
-    </div>
-        <a href="#page2" data-transition="slide" class="ui-btn ui-btn-b">Reservation akdes</a>
-        <a href="#page3" data-transition="slide" class="ui-btn ui-btn-b">El hajj & Omra</a>
-    </div>
-  <div data-role="footer" data-position="fixed" data-theme="b">
-    <div data-role="tabs" id="tabs">
-  <div data-role="navbar">
-    <ul>
-      <li><a href="#one" data-ajax="false">one</a></li>
-      <li><a href="#two" data-ajax="false">two</a></li>
-      <li><a href="#one" data-ajax="false">one</a></li>
-    </ul>
+
+  <div data-role="content" class="ui-content">
+    <form method="post" action="demoform.asp">
+      <div class="ui-field-contain">
+        <label for="fullname">Nom Prénom*:</label>
+        <input type="text" name="fullname" id="fullname">       
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Your email..">
+        <label for="email">Tél:</label>
+        <input type="email" name="email" id="email" placeholder="Your tel..">
+         <label for="email">Adresse:</label>
+        <input type="email" name="email" id="email" placeholder="Your Adresse..">
+      </div>
+      <input type="submit" data-inline="true" value="Submit">
+    </form>
   </div>
 </div>
-  </div>
-</div> 
-<!-- DialogDialogDialogDialogDialogDialogDialogDialogDialog -->
-
-  <div data-role="page" data-dialog="true" id="info">
-  <div data-role="header" data-theme="b">
-    <h1>Aide!</h1>
-  </div>
-
-  <div data-role="main" class="ui-content">
-    <p>info Akdes-voyages </p>
     
-  </div>
+    <div data-role="page" id="C">
+	<div data-role="header" data-position="fixed">
+		<a href="#a" data-transition="slide" data-icon="back" data-iconpos= notext>back</a>
+		<h1>C</h1>
+	</div><!-- /header -->
 
-  <div data-role="footer" data-theme="b">
-    
-  </div>
-</div> 
-<!-- DialogDialogDialogDialogDialogDialogDialogDialogDialog -->
+	<div role="main" class="ui-content">
+		<p>Page C</p>
+	
+	</div><!-- /content -->
 
-<div data-role="page" id="page2">
-  <div data-role="header" data-theme="b" >
-      <a href="#page1" data-transition="slide" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext">back</a>
-    <h1>Reservation akdes</h1>
-  </div>
-  <div data-role="main" class="ui-content">
-
-       <div class="offer">
-         <ul data-role="listview" data-inset="true">
-      <li>
-        <a href="#"><img src="https://cloud.githubusercontent.com/assets/10352839/8090305/71b0d668-0fad-11e5-8faf-d0387605fd1c.jpg">
-          
-        <p>Réservez des maintenant les dates hajj 2015
-Choisissez la formule qui vous correspond - See more at: http://www.akdes-voyages.com/#sthash.6t3H0PSo.dpuf</p>
-        </a>
-      </li>
-      <li>
-        <a href="#"><img src="img/img-a.png">
-          <h2>OMRA RAMADAN</h2>
-        <p>Le ramadan, est le mois du coran. Appréciez une omra ramadan 2015 à la Mecque et Médine. Plusieurs dates de départs sont proposées pour satisfaire le plus grand nombre - See more at: http://www.akdes-voyages.com/#sthash.6t3H0PSo.dpuf</p>
-        </a>
-      </li>
-       <li>
-        <a href="#"><img src="img/img-a.png">
-          <h2>OMRA</h2>
-        <p>Profitez d'une omra pas cher en 2015.
-Choisissez les dates de départ que vous voulez - See more at: http://www.akdes-voyages.com/#sthash.6t3H0PSo.dpuf</p>
-        </a>
-      </li>
-       <li>
-        <a href="#"><img src="img/img-a.png">
-          <h2>OMRA SUR MESURE</h2>
-        <p>Personnalisez votre votre voyage à la Mecque grâce à notre savoir faire. 
-Découvrez nos prix omra 2015 en famille ou en groupe. - See more at: http://www.akdes-voyages.com/#sthash.6t3H0PSo.dpuf</p>
-        </a>
-      </li>
-    </ul>
-       </div>
-       <!-- <a href="#page1">page1</a> -->
-  </div>
-  <div data-role="footer" data-position="fixed">
-    
-  </div>
-</div> 
-<div data-role="page" id="page3">
-  <div data-role="header" data-theme="b" >
-      <a href="#page1"  data-transition="slide"  class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext">back</a>
-    <h1>AKDES</h1>
-  </div>
-  <div data-role="main" class="ui-content">
-    <div  class="omra">
+	<div data-role="footer" data-position="fixed">
+		<!-- <h4>Page Footer</h4> -->
+		
+		
+	</div><!-- /footer -->
+    </div><!-- /page -->
 
 
-     </div> 
-     <div data-role="navbar">
-    <ul>
-      <li><a href="#" data-icon="home" data-theme="a">Avant de partir</a></li>
-      <li><a href="#Ihram" data-icon="home" data-theme="a">Ihram</a></li>
-      <li><a href="#omra" data-icon="user" data-theme="a">Omra</a></li>
-      <li><a href="#" data-icon="home" data-theme="a">Hajj</a></li>
-      <li><a href="#" data-icon="home" data-theme="a">vertissements</a></li>
-      <li><a href="#" data-icon="home" data-theme="a">Infos utiles</a></li>
-    </ul>
-  </div> 
-       <!-- <a href="#page1">page1</a> -->
-  </div>
-  <div data-role="footer" data-position="fixed">
-    
-  </div>
-</div> 
-
-<div data-role="Ihram" id="Ihram">
-  <div data-role="header" data-theme="b" >
-      <a href="#page1"  data-transition="slide"  class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext">back</a>
-    <h2>Ihram</h2>
-  </div>
-  <div data-role="main" class="ui-content">
-    <div  class="omra">
-    </div> 
-    <div data-role="collapsible-set" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
-    <div data-role="collapsible">
-      <img src="img/elhm.jpg">
-      <audio controls>
-       <source src="Yaqoub_Bayt.ogg" type="audio/ogg">
-       <source src="Yaqoub_Bayt.mp3" type="audio/mpeg">
-      </audio>
-        <h4>Qu'est ce que l'état d'Ihrâm</h4>
-    <p>L'ihram est un terme arabe lié au hajj : tout au long du pèlerinage, le pèlerin doit être en état d'ihram (arabe : إحرام [iḥrām], état de consécration rituelle; sacralisation; vêtement de pèlerinage). L'ihrâm symbolise l'entrée dans l'univers sacré. 
-
-Le pèlerin doit se soumettre à une purification physique complète, grandes ablutions et à une certaine hygiène de vie. 
-
-En premier lieu, il faut devenir pur. Pour cela, il faut accomplir les étapes suivantes: 
-Entrer dans le territoire du pèlerinage faire le lavage rituel sous la douche ou le lavage de tout le corps (ghusl). </p>
-    </div>
-</div>
-   
-       <!-- <a href="#page1">page1</a> -->
-  </div>
-  <div data-role="footer" data-position="fixed">
-    
-  </div>
-</div> 
-
-<div data-role="omra" id="omra">
-  <div data-role="header" data-theme="b" >
-      <a href="#page1"  data-transition="slide"  class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext">back</a>
-    <h2>Ihram</h2>
-  </div>
-  <div data-role="main" class="ui-content">
-    <div  class="omra">
-    </div> 
-    <div data-role="collapsible-set" data-theme="a" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d">
-    <div data-role="collapsible">
-      <img src="img/elhm.jpg">
-      <audio controls>
-       <source src="Yaqoub_Bayt.ogg" type="audio/ogg">
-       <source src="Yaqoub_Bayt.mp3" type="audio/mpeg">
-      </audio>
-        <h4>Qu'est ce que l'état d'Ihrâm</h4>
-    <p>L'ihram est un terme arabe lié au hajj : tout au long du pèlerinage, le pèlerin doit être en état d'ihram (arabe : إحرام [iḥrām], état de consécration rituelle; sacralisation; vêtement de pèlerinage). L'ihrâm symbolise l'entrée dans l'univers sacré. 
-
-Le pèlerin doit se soumettre à une purification physique complète, grandes ablutions et à une certaine hygiène de vie. 
-
-En premier lieu, il faut devenir pur. Pour cela, il faut accomplir les étapes suivantes: 
-Entrer dans le territoire du pèlerinage faire le lavage rituel sous la douche ou le lavage de tout le corps (ghusl). </p>
-    </div>
-</div>
-   
-       <!-- <a href="#page1">page1</a> -->
-  </div>
-  <div data-role="footer" data-position="fixed">
-    
-  </div>
-</div> 
-</body>
+	</body>
 </html>
