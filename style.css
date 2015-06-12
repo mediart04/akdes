@@ -1,61 +1,47 @@
+p{
+    font-size: 12px;
+}
+.bar-top{
+    background:#000;
+}
+.ui-body-c, .ui-overlay-c {
+    
+    background:#ddd;
+}
+.ui-bar-a {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0px -1px 0px #000;
+}
+#a-imag{
+	text-align: center;
+	width: 100%;
+}
 .ui-content {
-  border-width: 0;
-  overflow: visible;
-  overflow-x: hidden;
-  padding: 0em;
+    border-width: 0px;
+    overflow-y: visible;
+    overflow-x: hidden;
+    padding: 15px;
 }
-
-.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
-  background-color: #000;
-  border-color: #ddd;
-  color: #FFF;
-  text-shadow: 0 0px 0 #f3f3f3;
+.ui-li-aside{
+    color:#EF5E1B;
+    font-weight: bold;
 }
-
-.ui-page-theme-b .ui-btn, html .ui-bar-b .ui-btn, html .ui-body-b .ui-btn, html body .ui-group-theme-b .ui-btn, html head+body .ui-btn.ui-btn-b, .ui-page-theme-b .ui-btn:visited, html .ui-bar-b .ui-btn:visited, html .ui-body-b .ui-btn:visited, html body .ui-group-theme-b .ui-btn:visited, html head+body .ui-btn.ui-btn-b:visited {
-  background-color: #000;
-  border-color: #1f1f1f;
-  color: #fff;
-  text-shadow: 0 0px 0 #111;
+.ui-content img{
+    width: 90px;
+    height: 90px;
+    padding: 0px;
 }
-
-.offer{
-	background-color:;
-	color:white;
-	height: auto;
-
+.offert{
+    text-align: center;
 }
-
-.omra{
-	background-color:red;
-	color:white;
-	height: auto;
-	padding:0px; 
+.ui-grid-solo{
+background: rgba(236, 200, 138, 0.38) none repeat scroll 0% 0%;
 }
-.ui-content{
-	background-color:;
-	color:white;
-	padding:0px; 
-}
-.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
-	background-color: red;
-  background:url(https://cloud.githubusercontent.com/assets/10352839/8090301/691c172e-0fad-11e5-8c9a-a1aec6adf24b.png);
-  background-repeat:no-repeat;
-  border-color: #bbb;
-  color: #333;
-  text-shadow: 0 1px 0 #f3f3f3;
-}
-.ui-listview .ui-li-has-thumb>img:first-child, .ui-listview .ui-li-has-thumb>.ui-btn>img:first-child, .ui-listview .ui-li-has-thumb .ui-li-thumb {
-  position: absolute;
-  left: 0;
-  top: 0;
-  max-height: 5em;
-  max-width: 6em;
-}
-.ui-content .ui-listview-inset, .ui-panel-inner>.ui-listview-inset {
-  margin: 0em 0;
-}
-
-.ui-collapsible-inset, .ui-collapsible-set {
-  margin: 0px 0;
+#slider img{
+    display: block;
+    margin: 0 auto;
+    max-width: 1042px;
+    width:305px;
+    height: 200px;
 }
